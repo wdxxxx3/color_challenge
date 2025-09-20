@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solv 空间漫游</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="overlay" class="overlay">
+      <div class="overlay__content">
+        <h1>Solv 空间漫游</h1>
+        <p>
+          这是一个在三维 Solv 几何空间中自由穿梭的小实验。<br />
+          点击屏幕以进入体验并锁定鼠标。
+        </p>
+        <ul>
+          <li><strong>W / S</strong>：沿视线前进 / 后退</li>
+          <li><strong>A / D</strong>：向左 / 向右平移</li>
+          <li><strong>Space / Shift</strong>：上升 / 下降</li>
+          <li><strong>鼠标移动</strong>：转动视角</li>
+          <li><strong>R</strong>：重置位置</li>
+          <li><strong>Esc</strong>：退出游玩模式</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="hud" class="hud"></div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

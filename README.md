@@ -29,6 +29,10 @@ python3 -m http.server 8000
 
 也可以使用其它本地服务器（如 `npx serve`、`npx http-server` 等）。
 
+> 📌 如果只是想快速查看，也可以直接双击 `index.html` 打开；
+> 所有脚本都以传统方式加载，不再触发浏览器的模块 CORS 限制。
+> 但在这种模式下依然需要联网以从 CDN 载入 Three.js。
+
 ## 致谢
 
 - [Three.js](https://threejs.org/)

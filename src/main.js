@@ -1,4 +1,10 @@
-import * as THREE from "https://unpkg.com/three@0.158.0/build/three.module.js";
+/* global THREE */
+
+if (typeof THREE === "undefined") {
+  throw new Error(
+    "Three.js 未成功加载。请检查网络连接或脚本引入顺序。"
+  );
+}
 
 const overlay = document.getElementById("overlay");
 const hud = document.getElementById("hud");
